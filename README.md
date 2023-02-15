@@ -1,38 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+[Slinky Bridges]() is a developmental bridge aggregator that transfers test tokens across chains.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![CodeImage showcase](public/showcase.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤖 Tech stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Slinky bridges uses holds all 3rd party bridge plugins in the `bridges` folder.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Bridges
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### [@/bridges/wormhole](./src/bridges/wormhole/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Wormhole is a generic message passing protocol that connects to multiple chains including Ethereum, Solana, Binance Smart Chain, Polygon, Avalanche, Algorand, Fantom, Karura, Celo, Acala, Aptos and Arbitrum.
 
-## Learn More
+It exports useful methods to interact with wormhole:
 
-To learn more about Next.js, take a look at the following resources:
+- [network-graphs](./src/bridges/wormhole/graphs/): A graph relation of `Networks` and supported exchages between `Tokens`. It defines the presentation of network and token relationships in the UI.
+- [core](/src/bridges/wormhole/core/): Contains essential internal files and modules used by wormhole
+- [utils](/src/bridges/wormhole/utils/): Helpful parsers and constants for wormhole  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### [@/bridges/glitter-bridge](./src/bridges/glitter-bridge/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+ Glitter bridge powers cross-chain transfer of assets between Non-EVM and EVM supported networks bidirectionally, the first being the Algorand and Solana blockchain networks.  
+ 
+ Glitter bride integration coming soon.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT © [Kelvin Praies](https://github.com/kelvinpraies)

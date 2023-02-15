@@ -1,0 +1,14 @@
+diff --git a/node_modules/react-iconly/package.json b/node_modules/react-iconly/package.json
+index 18ac57d..a2532ba 100644
+--- a/node_modules/react-iconly/package.json
++++ b/node_modules/react-iconly/package.json
+@@ -39,9 +39,6 @@
+     "predeploy": "cd example && yarn install && yarn run build",
+     "deploy": "gh-pages -d example/build"
+   },
+-  "peerDependencies": {
+-    "react": "^16.8.6 || ^17"
+-  },
+   "devDependencies": {
+     "babel-eslint": "^10.0.3",
+     "cross-env": "^7.0.2",

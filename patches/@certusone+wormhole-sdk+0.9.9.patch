@@ -1,0 +1,20 @@
+diff --git a/node_modules/@certusone/wormhole-sdk/package.json b/node_modules/@certusone/wormhole-sdk/package.json
+index 5572850..1b84b64 100644
+--- a/node_modules/@certusone/wormhole-sdk/package.json
++++ b/node_modules/@certusone/wormhole-sdk/package.json
+@@ -51,7 +51,6 @@
+     "@types/node-fetch": "^2.6.2",
+     "@types/react": "^17.0.19",
+     "copy-dir": "^1.3.0",
+-    "ethers": "^5.6.8",
+     "jest": "^27.3.1",
+     "prettier": "^2.3.2",
+     "ts-jest": "^27.0.7",
+@@ -80,6 +79,7 @@
+     "binary-parser": "^2.2.1",
+     "bs58": "^4.0.1",
+     "elliptic": "^6.5.4",
++    "ethers": "^5.6.8",
+     "js-base64": "^3.6.1",
+     "near-api-js": "^1.0.0"
+   }
