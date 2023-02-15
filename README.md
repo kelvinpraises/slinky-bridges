@@ -1,7 +1,7 @@
 
 ## Introduction
 
-[Slinky Bridges]() is a developmental bridge aggregator that transfers test tokens across chains.
+[Slinky Bridges]() is a developmental bridge aggregator that transfers test tokens across chains. It currently supports transfers on `Algorand`, `Ethereum`, and `Solana`.
 
 ![CodeImage showcase](public/showcase.png)
 
